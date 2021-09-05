@@ -316,4 +316,43 @@ body {
 .container .main .blogs .blog p:last-child {
   color: black;
 }
+
+.container .main .footer {
+  width: 100%;
+  padding: 5px 0;
+  margin: 30px 0px;
+  direction: rtl;
+}
+
+.container .main .footer ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .main .footer ul li {
+  color: black;
+  font-size: 13px;
+}
+
+.container .main .footer ul li a {
+  color: #2E2EF7;
+}
+
+.container .main .footer ul li:nth-child(5) a {
+  color: red;
+}
 /*# sourceMappingURL=main.css.map */

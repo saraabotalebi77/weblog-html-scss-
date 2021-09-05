@@ -1,14 +1,14 @@
 @import "variable";
 @import "mixin";
-@font-face{
-    font-family : "IranSans";
-    src : url('./../font/FontsFree-Net-ir_sans.ttf');
-}
+// @font-face{
+//     font-family : "IranSans";
+//     src : url('');
+// }
 *{
     padding : 0;
     margin : 0;
     box-sizing : border-box;
-    font-family : "IranSans";
+    font-family : b nazanin;
 }
 a{
     text-decoration : none;

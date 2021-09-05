@@ -250,4 +250,16 @@ body {
     width: 100%;
   }
 }
+
+@media screen and (max-width: 400px) {
+  .container .main .baner-form .baner .baner-btn {
+    bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .container .main .baner-form .baner .baner-btn {
+    bottom: 15px;
+  }
+}
 /*# sourceMappingURL=main.css.map */

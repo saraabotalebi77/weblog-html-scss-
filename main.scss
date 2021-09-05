@@ -101,6 +101,17 @@ body{
                 flex-grow : 1;
             }
         }
+        .blogs{
+            width : $width_100per;
+            @include Flex(flex,row,wrap,flex-start,center);
+            .blog{
+                width : 300px;
+                height : 180px;
+                background-color : $color_blog ;
+                
+            }
+
+        }
     }
 }
 

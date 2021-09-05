@@ -249,4 +249,29 @@ body {
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
+
+.container .main .blogs {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .main .blogs .blog {
+  width: 300px;
+  height: 180px;
+  background-color: #E9E9E9;
+}
 /*# sourceMappingURL=main.css.map */

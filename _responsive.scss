@@ -1,0 +1,24 @@
+@media screen and (max-width: 900px)
+{
+    .container{
+        .header,
+        .footer
+        {
+            display : none;
+        }
+        .main{
+            .baner-form{
+                @include Flex(flex,column,wrap,flex-start,center);
+                .baner{
+                    width :100%;
+                }
+                .form{
+                    width : 100%;
+                }
+            }
+        }
+    }
+    
+    
+    
+}

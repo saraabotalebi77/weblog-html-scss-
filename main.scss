@@ -1,3 +1,4 @@
+
 @import "variable";
 @import "mixin";
 @font-face{
@@ -22,7 +23,7 @@ body{
 }
 .container{
     margin-top : 20px;
-    width : $width_container;
+    width : $widthContainer;
     @include Flex(flex,column,wrap,flex-start,center);
     .header{
         width : $width_100per;
@@ -36,9 +37,9 @@ body{
             width :$width_100per;
             @include Flex(flex,row,wrap,flex-start,flex-start);
             .baner{
-                width : $width_baner;
+                width : $widthBaner;
                 height : 220px;
-                background-color : $color_baner;
+                background-color : $colorBaner;
                 position : relative;
                 @include Flex(flex,column,nowrap, center, center);
                 .baner-title{
@@ -49,19 +50,19 @@ body{
                 }
                 .baner-btn{
                     color : white;
-                    background-color : $color_baner_btn;
+                    background-color : $colorBanerBtn;
                     border : none;
                     padding: 5px 10px;
                     font-size: 12px;
                     position : absolute;
-                    bottom : $btn-bottom;
+                    bottom : $btnBottom;
                 }
             }
             .form{
-                width :$width_form;
+                width :$widthForm;
                 position : relative;
                 height : 220px;
-                background-color :$color_form;
+                background-color :$colorForm;
                 @include Flex(flex,column,wrap, flex-start , center);
                 .input-form{
                     @include Form;
@@ -77,13 +78,13 @@ body{
                     @include Form;
                     border : none;
                     color : white;
-                    background-color: $color_btn_form;
+                    background-color: $colorBtnForm;
                     font-size : 11px;
                 }
                 a{
                     color:#551A8B;
                     position : absolute;
-                    bottom : $btn-bottom;
+                    bottom : $btnBottom;
                     font-size : 12px;
                     &:active{
                         color :red;
@@ -112,7 +113,7 @@ body{
             .blog{
                 width : 300px;
                 height : 180px;
-                background-color : $color_blog ;
+                background-color : $colorBlog ;
                 direction : rtl;
                 padding : 9px;
                 margin : 5px 1px;

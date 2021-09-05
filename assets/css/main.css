@@ -1,6 +1,6 @@
 @font-face {
   font-family: "IranSans";
-  src: url("./assets/font/FontsFree-Net-ir_sans.ttf");
+  src: url("./../font/FontsFree-Net-ir_sans.ttf");
 }
 
 * {

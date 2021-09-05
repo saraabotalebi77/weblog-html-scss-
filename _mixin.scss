@@ -1,0 +1,13 @@
+@mixin Flex($display,$flex-direction,$flex-wrap,$justify-content,$align-items)
+{
+    display : $display;
+    flex-direction : $flex-direction;
+    flex-wrap : $flex-wrap;
+    justify-content : $justify-content;
+    align-items : $align-items;
+}
+@mixin Form{
+    width : 90%;
+    height : 35px;
+    margin-top : 10px;
+}

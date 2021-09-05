@@ -1,0 +1,106 @@
+@import "variable";
+@import "mixin";
+@font-face{
+    font-family : "IranSans";
+    src : url('./assets/font/FontsFree-Net-ir_sans.ttf');
+}
+*{
+    padding : 0;
+    margin : 0;
+    box-sizing : border-box;
+    font-family : "IranSans";
+}
+html,
+body{
+    width : 100%;
+}
+body{
+    @include Flex(flex,column,wrap, flex-start , center);
+    height : 1000px;
+}
+.container{
+    margin-top : 20px;
+    width : $width_container;
+    @include Flex(flex,column,wrap,flex-start,center);
+    .header{
+        width : $width_100per;
+        @include Flex(flex,row,nowrap,flex-start,flex-start);
+    }
+    .main{
+        width :$width_100per;
+        @include Flex(flex,column,wrap, center , center);
+        .baner-form{
+            width :$width_100per;
+            @include Flex(flex,row,wrap,flex-start,flex-start);
+            .baner{
+                width : $width_baner;
+                height : 220px;
+                background-color : $color_baner;
+                position : relative;
+                @include Flex(flex,column,nowrap, center, center);
+                .baner-title{
+                    padding : 0px 30px; 
+                    text-align : center;
+                    color : white;
+                    font-size : 13px;
+                }
+                .baner-btn{
+                    color : white;
+                    background-color : $color_baner_btn;
+                    border : none;
+                    padding: 5px 10px;
+                    font-size: 12px;
+                    position : absolute;
+                    bottom : $btn-bottom;
+                }
+            }
+            .form{
+                width :$width_form;
+                position : relative;
+                height : 220px;
+                background-color :$color_form;
+                @include Flex(flex,column,wrap, flex-start , center);
+                .input-form{
+                    @include Form;
+                    outline : none;
+                    padding : 0 10px;
+                    border : 1px solid #D3D3D3;
+                    text-align : center;
+                }
+                .input-form::placeholder{
+                    font-size : 12px;
+                }
+                .btn-form{
+                    @include Form;
+                    border : none;
+                    color : white;
+                    background-color: $color_btn_form;
+                    font-size : 11px;
+                }
+                a{
+                    color:#551A8B;
+                    text-decoration : none;
+                    position : absolute;
+                    bottom : $btn-bottom;
+                    font-size : 12px;
+                }
+            }
+        }
+        .title{
+            width : $width_100per;
+            @include Flex(flex,row,nowrap,flex-start,center);
+            margin : 20px 0;
+            .p-title
+            {
+                width : 150px;
+                color : #1818FF;
+                font-size : 14px;
+                text-align : center;
+            }
+            hr{
+                flex-grow : 1;
+            }
+        }
+    }
+}
+

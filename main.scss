@@ -1,6 +1,6 @@
 
-@import "variable";
-@import "mixin";
+@import "./assets/sass/mixin";
+@import "./assets/sass/variable";
 @font-face{
     font-family : "IranSans";
     src : url('./../font/FontsFree-Net-ir_sans.ttf')format("truetype");
@@ -160,5 +160,5 @@ body{
         }
     }
 }
-@import "responsive";
+@import "./assets/sass/responsive";
 
